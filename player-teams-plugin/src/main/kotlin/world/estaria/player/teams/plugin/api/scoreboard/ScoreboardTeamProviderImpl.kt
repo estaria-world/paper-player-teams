@@ -34,7 +34,6 @@ class ScoreboardTeamProviderImpl(
     private fun registerTeams(player: Player) {
         val scoreboard = player.scoreboard
         this.playerTeamsProvider.getPlayerTeams()
-            .filter { scoreboard.getTeam(it.getSorting()) == null }
             .forEach { registerOrUpdateTeam(scoreboard, it) }
     }
 
