@@ -44,7 +44,7 @@ class SpigotPlugin : JavaPlugin() {
         Bukkit.getPluginManager().registerEvents(
             this,
             PlayerJoinListener(playerTeamsProvider, scoreboardTeamProvider),
-            PlayerTeamsUpdateListener(playerTeamsProvider)
+            PlayerTeamsUpdateListener(playerTeamsProvider, scoreboardTeamProvider)
         )
     }
 
