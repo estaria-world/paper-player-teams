@@ -2,31 +2,34 @@ package world.estaria.player.teams.plugin.api
 
 import world.estaria.player.teams.api.PlayerTeam
 import world.estaria.player.teams.api.TeamPatternType
+import world.estaria.player.teams.plugin.repository.PlayerTeamEntity
 
 /**
  * @author Niklas Nieberler
  */
 
-class PlayerTeamImpl : PlayerTeam {
+class PlayerTeamImpl(
+    private val entity: PlayerTeamEntity
+) : PlayerTeam {
 
     override fun isDefault(): Boolean {
-        TODO("Not yet implemented")
+        return this.entity.default
     }
 
     override fun getSorting(): String {
-        TODO("Not yet implemented")
+        return this.entity.sorting
     }
 
     override fun getPattern(type: TeamPatternType): String {
-        TODO("Not yet implemented")
+        return this.entity.patterns[type] ?: "<red>ZERO"
     }
 
     override fun getPresentRank(): String {
-        TODO("Not yet implemented")
+        return this.entity.presentRank
     }
 
     override fun getSubRanks(): List<String> {
-        TODO("Not yet implemented")
+        return this.entity.subRanks
     }
 
 }
