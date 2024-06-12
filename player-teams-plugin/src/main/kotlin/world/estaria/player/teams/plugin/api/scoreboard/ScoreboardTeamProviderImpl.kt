@@ -1,4 +1,4 @@
-package world.estaria.player.teams.plugin.api
+package world.estaria.player.teams.plugin.api.scoreboard
 
 import net.kyori.adventure.text.format.NamedTextColor
 import org.bukkit.Bukkit
