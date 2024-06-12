@@ -63,6 +63,7 @@ subprojects {
 
         // avionik dependencies
         compileOnly("world.avionik:minecraft-common:1.0.1")
+        compileOnly("world.avionik:fancy-kotlin-paper:1.0.2")
         compileOnly("world.avionik:database-simplified-kit:1.1.0")
 
         // estaria dependencies
@@ -81,6 +82,9 @@ subprojects {
         // database dependencies
         compileOnly("dev.morphia.morphia:morphia-core:2.3.2")
         compileOnly("com.rabbitmq:amqp-client:5.21.0")
+
+        // paper dependencies
+        compileOnly("io.papermc.paper:paper-api:1.20.4-R0.1-SNAPSHOT")
 
         // log4j dependencies
         val log4jVersion = "2.23.1"
