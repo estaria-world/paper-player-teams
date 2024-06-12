@@ -1,0 +1,10 @@
+name: player-teams
+version: 1.1.0
+api-version: 1.20
+website: github.com/estaria-world
+author: MrManHD
+
+main: world.estaria.player.teams.plugin.plugin.SpigotPlugin
+
+depend:
+  - database-simplified
