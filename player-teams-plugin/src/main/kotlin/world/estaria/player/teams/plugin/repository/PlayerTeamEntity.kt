@@ -18,6 +18,6 @@ class PlayerTeamEntity(
         Pair(TeamPatternType.CHAT, ""),
         Pair(TeamPatternType.COLOR_CODE, ""),
         Pair(TeamPatternType.TABLIST_PREFIX, ""),
-        Pair(TeamPatternType.COLOR_CODE, "")
+        Pair(TeamPatternType.UNDER_PLAYER_PREFIX, "")
     )
 )
