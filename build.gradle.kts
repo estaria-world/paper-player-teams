@@ -68,6 +68,7 @@ subprojects {
 
         // estaria dependencies
         compileOnly("world.estaria:event-manager:1.0.2")
+        compileOnly("world.avionik:space-spigot-api:1.0.4")
         compileOnly("world.estaria:rabbitmq-protobuf-kit:1.0.2")
 
         // adventure dependencies
