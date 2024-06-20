@@ -7,7 +7,7 @@ plugins {
 
 allprojects {
     group = "world.estaria"
-    version = "1.1.0"
+    version = "1.0.1"
 
     apply {
         plugin("org.jetbrains.kotlin.jvm")
