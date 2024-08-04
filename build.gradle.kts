@@ -85,7 +85,7 @@ subprojects {
         compileOnly("com.rabbitmq:amqp-client:5.21.0")
 
         // paper dependencies
-        compileOnly("io.papermc.paper:paper-api:1.20.4-R0.1-SNAPSHOT")
+        compileOnly("io.papermc.paper:paper-api:1.21-R0.1-SNAPSHOT")
 
         // log4j dependencies
         val log4jVersion = "2.23.1"
