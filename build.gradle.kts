@@ -25,28 +25,9 @@ allprojects {
 
         // estaria repositories
         maven {
-            name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/estaria-world/paper-command-kit")
-            credentials {
-                username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
-                password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
-            }
-        }
-        maven {
-            name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/estaria-world/rabbitmq-protobuf-kit")
-            credentials {
-                username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
-                password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
-            }
-        }
-        maven {
-            name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/estaria-world/event-manager")
-            credentials {
-                username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
-                password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
-            }
+            name = "estaria"
+            url = uri("https://repo.estaria.world/releases")
+            credentials(PasswordCredentials::class.java)
         }
 
         // protobuf repositories
@@ -63,7 +44,7 @@ subprojects {
 
         // avionik dependencies
         compileOnly("world.avionik:minecraft-common:1.0.1")
-        compileOnly("world.avionik:fancy-kotlin-paper:1.0.2")
+        compileOnly("world.avionik:fancy-kotlin-paper:1.0.4")
         compileOnly("world.avionik:database-simplified-kit:1.1.0")
 
         // estaria dependencies
@@ -85,7 +66,7 @@ subprojects {
         compileOnly("com.rabbitmq:amqp-client:5.21.0")
 
         // paper dependencies
-        compileOnly("io.papermc.paper:paper-api:1.21-R0.1-SNAPSHOT")
+        compileOnly("world.estaria.coco.paper:coco-paper-api:1.21.1-R0.1-SNAPSHOT")
 
         // log4j dependencies
         val log4jVersion = "2.23.1"
